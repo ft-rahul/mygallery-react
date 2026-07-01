@@ -1,8 +1,15 @@
+import "./styles/Imagecard.css"
+import Header from "./components/header";
+import Gallery from "./components/Gallery";
 function App() {
   return (
-    <div className="bg">
-      <h1>Image Gallery</h1>
+    <>
+    {/* Parent  */}
+    <div className="p-4">
+      <Header/>
+      <Gallery/>
     </div>
+    </>
   );
 }
 
