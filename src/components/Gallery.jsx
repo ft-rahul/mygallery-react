@@ -1,17 +1,17 @@
 import Pictures from "../data/Images"
+import ImageCard from "./imgcard"
 
 function Gallery() {
     return (
         <>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gallery_parent gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gallery_parent gap-3">
                 {
-                    Pictures.map(function (item) {
-                        return (
-                            <div className="card" key={item.id}>
-                                <img className="Gallery_image" src={item.url} alt={`Img ${item.id}`} />
-                            </div>
-                        )
-                    })
+                    Pictures.map((item) => (
+                        <ImageCard
+                            key={item.id}
+                            image={item}
+                        />
+                    ))
                 }
             </div>
         </>
