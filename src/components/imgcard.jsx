@@ -11,9 +11,10 @@ function ImageCard({ image }){
 
             <div className="overlay">
 
-                <h3>{image.title}</h3>
+                <h3 className="text-xl font-semibold">{image.title}</h3>
 
-                <p>{image.description}</p>
+                <p className="text-xs font-thin">{image.description}</p>
+                
 
             </div>
 

@@ -1,24 +1,48 @@
 .card img{
-    width: 300px;
+    width: 100%;
     height: 200px;
-    object-fit:cover;
+    object-fit: cover;
+    display: block;
+    transition: .4s;
 }
 
 .card {
     position: relative;
     overflow: hidden;
-    /* border-radius:12px; */
+    border-radius:12px;
     cursor:pointer;
     transition: transform 0.5s ease;
 
 }
 
-.gallery_parent{
-    
-}
+.card:hover .overlay{
 
+    opacity:1;
+
+}
 .card:hover{
     transform:scale(1.1);
     transition: transform 0.5s ease;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.6);
+
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    padding:20px;
+
+    opacity:0;
+
+    transition:.4s;
+
 }
