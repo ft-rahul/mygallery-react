@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     {/* Parent  */}
-    <div className="p-4">
+    <div className="p-6">
       <Header/>
       <Gallery/>
     </div>
